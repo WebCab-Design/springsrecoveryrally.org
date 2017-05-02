@@ -1,0 +1,16 @@
+{
+  "name": "springsrecoveryrally.org",
+  "version": "1.0.0",
+  "description": "site by webcab",
+  "main": "index.js",
+  "dependencies": {
+    "jenie": "^1.0.90"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"cp": "cp node_modules/jenie/dist/jenie.polly.min.js src/assets/js/."
+  },
+  "author": "Webcab",
+  "license": "ISC"
+}
