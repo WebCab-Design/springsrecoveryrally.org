@@ -4,12 +4,15 @@
   "description": "site by webcab",
   "main": "index.js",
   "dependencies": {
+    "flexbox-grid": "^1.0.0",
+    "flexboxgrid": "^6.3.1",
     "jenie": "^1.0.90"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"cp": "cp node_modules/jenie/dist/jenie.polly.min.js src/assets/js/."
+    "cp-jenie": "cp node_modules/jenie/dist/jenie.polly.min.js src/assets/js/.",
+	"cp-flexbox": "cp node_modules/flexboxgrid/css/flexboxgrid.min.css src/assets/css/."
   },
   "author": "Webcab",
   "license": "ISC"
