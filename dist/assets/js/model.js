@@ -12,15 +12,15 @@ Jenie.services.tabModel = {
 			name: "Event Details 3",
 			body: "HELLO CONTENT"
 		}
-	],
-	selected: function () {
-		var box = document.querySelectorAll('.box');
-
-		for (var i = 0; i < box.length; i++) {
-			var boxes = box[i];
-
-			boxes.classList.toggle('active');
-
-		}
-	}
-}
+	]
+	// selected: function () {
+	// 	var box = document.querySelectorAll('.box');
+	//
+	// 	for (var i = 0; i < box.length; i++) {
+	// 		var boxes = box[i];
+	//
+	// 		boxes.classList.toggle('active');
+	//
+	// 	}
+	// }
+};

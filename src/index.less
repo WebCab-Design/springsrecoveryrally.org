@@ -1,5 +1,7 @@
 @light-gray: #f6f6f6;
 @black: #2f2f2f;
+@blue: #102f82;
+@red: #bf2c34;
 
 
 * {
@@ -63,9 +65,13 @@ input, textarea {
 	> .tab {
 		display: inline-block;
 		padding: 1rem;
+		&.active {
+			border-bottom: 2px solid @blue;
+			background-color: rgba(16,47,130,0.1);
+		}
 		&:hover {
 			cursor: pointer;
-			background-color: @light-gray;
+			background-color: rgba(16,47,130,0.1);
 		}
 	}
 }

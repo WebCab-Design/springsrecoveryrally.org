@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cp-jenie": "cp node_modules/jenie/dist/jenie.polly.min.js src/assets/js/.",
-	"cp-flexbox": "cp node_modules/flexboxgrid/css/flexboxgrid.min.css src/assets/css/."
+    "cp-flexbox": "cp node_modules/flexboxgrid/css/flexboxgrid.min.css src/assets/css/."
   },
   "author": "Webcab",
   "license": "ISC"

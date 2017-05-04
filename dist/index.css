@@ -58,9 +58,13 @@ textarea::placeholder {
   display: inline-block;
   padding: 1rem;
 }
+.tabs > .tab.active {
+  border-bottom: 2px solid #102f82;
+  background-color: rgba(16, 47, 130, 0.1);
+}
 .tabs > .tab:hover {
   cursor: pointer;
-  background-color: #f6f6f6;
+  background-color: rgba(16, 47, 130, 0.1);
 }
 .panels {
   padding: 1rem;

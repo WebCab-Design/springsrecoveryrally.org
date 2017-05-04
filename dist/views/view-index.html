@@ -3,9 +3,6 @@
 		<div class="tab-wrap">
 			<div class="tabs">
 				<div class="tab active">
-					<p>Event Overview</p>
-				</div>
-				<div class="tab">
 					<p>Program</p>
 				</div>
 				<div class="tab">
@@ -25,7 +22,7 @@
 				</div>
 			</div>
 			<div class="panels">
-				<div class="panel">
+				<div class="panel active">
 					<h3>The Springs Recovery Rally and 5K Run/3K Walk for Recovery</h3>
 					<p>Race Time:  <strong>9:00 AM</strong></p>
 					<p>Rally from <strong>10:00 AM to 1:00 PM</strong></p>
@@ -101,7 +98,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="panel active">
+				<div class="panel">
 					<form name="contact-form">
 		    		<h4>Contact us</h4>
 		    		<p>Please fill out form below if you have any questions about the upcomming events.</p>
@@ -162,14 +159,38 @@
 	</section>
 </template>
 
+<script src="/assets/js/model.js"></script>
 
 <script>
-Jenie.component({
-	name: "view-index",
-	template: "template",
-	model: Jenie.services.tabModel,
-	created: function () {
-		console.log(this.model.tabs);
-	}
-});
+	Jenie.component({
+		name: "view-index",
+		template: "template",
+		model: Jenie.services.tabModel,
+		created: function () {
+			var element = this.element;
+
+			var tabs = element.querySelectorAll('.tab');
+			var panels = element.querySelectorAll('.panel');
+			var oldIndex = 0;
+			function tabHandler () {
+				tabs[i].addEventListener('click', function () {
+					var index = this.getAttribute('data-index');
+
+					tabs[oldIndex].classList.remove('active');
+					tabs[index].classList.toggle('active');
+					panels[oldIndex].classList.remove('active');
+					panels[index].classList.toggle('active');
+
+					oldIndex = index;
+				});
+			}
+
+			for (var i = 0; i < tabs.length; i++) {
+				tabs[i].setAttribute('data-index', i);
+				tabHandler();
+			}
+
+
+		}
+	});
 </script>

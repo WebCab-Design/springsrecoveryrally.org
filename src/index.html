@@ -6,22 +6,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title></title>
 
-
 		<!-- CSS -->
-		<link rel="stylesheet" href="assets/css/flexboxgrid.min.css">
-		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="/assets/css/flexboxgrid.min.css">
+		<link rel="stylesheet" href="/index.css">
 
 		<!-- Scripts -->
-		<script src="assets/js/jenie.polly.min.js"></script>
-		<script src="assets/js/model.js"></script>
+		<script src="/assets/js/jenie.polly.min.js"></script>
+
+		<!-- Index JS -->
+		<script src="index.js"></script>
+
+		<script>
+			Jenie.router({
+				routes: [
+					{
+						title: "2017 Colorado Springs Recovery Rally",
+						path: "/",
+						component: "view-index"
+					}
+				]
+
+			});
+		</script>
 
 		<!-- HTML Imports -->
 		<link rel="import" href="/views/view-index.html">
 
-		<!-- Index JS -->
-		<script src="index.js"></script>
 	</head>
 	<body>
+
 		<header>
 			<div>
 				<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_250/v1466377807/Springs-Recovery-Rally_waqkuq.png">
@@ -38,20 +51,5 @@
 		<footer>
 		</footer>
 
-
-
-
-		<script>
-			Jenie.router({
-				routes: [
-					{
-						title: "2017 Colorado Springs Recovery Rally",
-						path: "/",
-						component: "view-index"
-					}
-				]
-
-			});
-		</script>
 	</body>
 </html>
