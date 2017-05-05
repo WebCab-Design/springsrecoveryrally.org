@@ -6,7 +6,7 @@
   "dependencies": {
     "flexbox-grid": "^1.0.0",
     "flexboxgrid": "^6.3.1",
-    "jenie": "^1.0.90"
+    "jenie": "^1.0.92"
   },
   "devDependencies": {},
   "scripts": {

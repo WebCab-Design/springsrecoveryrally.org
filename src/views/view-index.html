@@ -1,159 +1,13 @@
 <template>
-	<section>
-		<div class="tab-wrap">
-			<div class="tabs">
-				<div class="tab active">
-					<p>Program</p>
-				</div>
-				<div class="tab">
-					<p>Exhibitor</p>
-				</div>
-				<div class="tab">
-					<p>Sponsors</p>
-				</div>
-				<div class="tab">
-					<p>Sponsor Fees</p>
-				</div>
-				<div class="tab">
-					<p>Registration</p>
-				</div>
-				<div class="tab">
-					<p>Contact</p>
-				</div>
+	<section class="tab-wrap">
+		<div j-each-tab="tabs" class="tabs">
+			<div class="tab">
+				<div j-text="tab.name"></div>
 			</div>
-			<div class="panels">
-				<div class="panel active">
-					<h4>The Springs Recovery Rally and 5K Run/3K Walk for Recovery</h4>
-					<p>Race Time:  <strong>9:00 AM</strong></p>
-					<p>Rally from <strong>10:00 AM to 1:00 PM</strong></p>
-					<p>Location:<a href="https://www.google.com/maps/place/America+the+Beautiful+Park/@38.8298973,-104.833281,17z/data=!3m1!4b1!4m5!3m4!1s0x87134525e658ae47:0x87901c5422d70e9c!8m2!3d38.8298973!4d-104.8310923" target="new">America the Beautiful Park, Colorado Springs</a>
-					<br />126 Cimino Dr, Colorado Springs, CO 80903</p>
-
-					<h4>The Cause</h4>
-					<p>We believe Colorado Springs is a great place to recover from substance use disorders and find freedom from addiction! This event will celebrate our successes as a recovery community, put a face and voice to recovery from substance abuse disorder, and reduce the stigma that so often surrounds the disease of addiction.</p>
-
-					<h4>Rally Activities and Resources</h4>
-					<p>We anticipate over 500 people will participate in this event. We will have live music, speakers, games and contests, a "kids zone" full of activities and prizes, great food and much more!  Representatives from healthcare organizations, in-patient and out-patient recovery centers, 12-step groups, and non-profit organizations, are invited to host a booth to provide information and resources to our community.</p>
-
-					<h4>Who We Are</h4>
-					<p><strong><a href="http://www.springsrecoveryconnection.org/">Springs Recovery Connection:</a></strong>
-					<blockquote>Is a non-profit organization serving the community of Colorado Springs and surrounding areas. We offer a wide variety of services including information and referral, substance abuse awareness education, Recovery Coaching, sober activities and support group meetings <a href="http://www.springsrecoveryconnection.org/">springsrecoveryconnection.org</a>.</p> </blockquote>
-
-					<p><strong><a href="http://www.phoenixmultisport.org/" target="new">Phoenix MultiSport</a></strong> <blockquote>Is a supportive, physically active community for individuals who are recovering from a substance use disorder and those who choose to live sober. Through pursuits such as climbing, hiking, running, strength training, yoga, road/mountain biking, socials and other activities, we seek to help our members develop and maintain the emotional strength they need to stay sober. <a href="http://www.phoenixmultisport.org" target="new">www.phoenixmultisport.org.</a></p></blockquote>
-				</div>
-				<div class="panel">
-					<object width="100%" height="1000px" data="https://res.cloudinary.com/dbc2wlvk8/image/upload/v1493759915/recovery-rally/Springs-Recovery-Rally-Flyer-08-15-16.pdf"></object>
-				</div>
-				<div class="panel">
-					<h4>Become an Exhibitor</h4>
-					<p>One of the most important aspects of the Springs Recovery Rally is to connect recovery services and resources with people who are looking for hope in Colorado Springs! Your presence at the Rally as an exhibitor will make a diffeence. It is also a great place to network!</p>
-
-					<p>Booth space is available for $250/ organization and includes one 6-foot table and 2 chairs. Your organization, along with a short description of what you do, will be listed below. We will also include your contact information on our Resources handout at the Rally. booth placement at the Rally is done on a first-come, first-served basis. If you wish to have your organization's logo featured on our t-shirt or any other Rally promotion, please visit our Sponsorship page.</p>
-
-					<p>Need more information? Please contact us.</p>
-				</div>
-				<div class="panel">
-					<h4>Thanks to our 2016 sponsors!</h4>
-				</div>
-				<div class="panel">
-					<h4>To begin the registration process please select one of the following sponsor fees.</h4>
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="box">
-								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-									<input type="hidden" name="cmd" value="_s-xclick">
-									<input type="hidden" name="hosted_button_id" value="JPHMT5NP7LXBU">
-									<table>
-									<tr><td><input type="hidden" name="on0" value="Sponsorship Level">Sponsorship Level</td></tr><tr><td><select name="os0">
-										<option value="Premier Sponsorship">Premier Sponsorship $2,500.00 USD</option>
-										<option value="Gold Sponsorship">Gold Sponsorship $1,500.00 USD</option>
-										<option value="Silver Sponsorship">Silver Sponsorship $500.00 USD</option>
-										<option value="Exhibitor Sponsorship">Exhibitor Sponsorship $250.00 USD</option>
-									</select> </td></tr>
-									</table>
-									<input type="hidden" name="currency_code" value="USD">
-									<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-								</form>
-							</div>
-						</div>
-						<div class="col-xs-12">
-							<div class="box">
-								<p><strong>Premier Sponsorship (Sold Out) - $2,500:</strong> Includes introducing keynote speakers, name/logo featured on the event website, printed on all publicity and t-shirts (largest space on t-shirt), complimentary booth space, and 10 complimentary registrations for the Phoenix Multisport Run/Walk for Recovery.</p>
-								<p><strong>Gold Sponsorship (Sold Out) - $1,500:</strong> Includes name/logo featured on the event website, printed on all publicity and t-shirts, complimentary booth space, and 5 complimentary registrations for the Phoenix Multisport Run/Walk for Recovery.</p>
-								<p><strong>Silver Sponsorship (5) - $500:</strong> Includes name featured on the event website, printed on all publicity and t-shirts, complimentary booth space, and 2 complimentary registrations for the Phoenix Multisport Run/Walk for Recovery.</p>
-								<p><strong>Exhibitor Sponsors</strong> at $250/ea (will cap if we get too many)</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="panel">
-					<div class="row">
-						<h5>The Springs Recovery Rally is FREE! You do not need to register to attend. Registration is required, however, for the Race and if you want to volunteer. Please use the links below to register.</h5>
-					</div>
-					<div class="row">
-						<h4>Register for 5k Run at $35 per person</h4><br />
-						<a href="https://www.racemenu.com/events/141246-PHOENIX-MULTISPORT-5K-RUN-3K-WALK">
-							<button class="button" type="button">5k Run Registration</button>
-						</a>
-					</div>
-				</div>
-				<div class="panel">
-					<form name="contact-form">
-		    		<h4>Contact us</h4>
-		    		<p>Please fill out form below if you have any questions about the upcomming events.</p>
-		    		<p><strong>Volunteer Opportunity:</strong> Add "Volunteer" to the subject to inquire about volunteering for the event.</p>
-				    <div class="row">
-				        <div class="col-sm-4">
-							<div class="box">
-					            <label>First Name <small>required</small>
-						            <input type="text" name="contact_first_name" placeholder="first name" required/>
-					            </label>
-					        </div>
-						</div>
-				        <div class="col-sm-4">
-							<div class="box">
-						        <label>Last Name <small>required</small>
-						            <input type="text" name="contact_last_name" placeholder="last name" required/>
-						        </label>
-					        </div>
-						</div>
-				        <div class="col-sm-4">
-							<div class="box">
-						        <label>Phone Number
-						            <input type="text" name="contact_phone" placeholder="your number" />
-						        </label>
-					        </div>
-						</div>
-				    </div>
-			        <div class="row">
-			            <div class="col-sm-6">
-							<div class="box">
-				                <label>Email <small>required</small>
-					                <input type="text" name="contact_email" placeholder="email" required/>
-				                </label>
-							</div>
-			            </div>
-			            <div class="col-sm-6">
-							<div class="box">
-				                <label>Subject <small>required</small>
-					                <input type="text" name="contact_subject" placeholder="subject" required/>
-				                </label>
-							</div>
-			            </div>
-			        </div>
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="box">
-								<label>Message <small>required</small>
-									<textarea name="contact_message" placeholder="your message" required></textarea>
-								</label>
-							</div>
-						</div>
-					</div>
-					<input class="submit" type="button" value="SUBMIT">
-					</form>
-				</div>
+		</div>
+		<div j-each-tab="tabs" class="panels">
+			<div class="panel">
+				<div j-html="tab.body"></div>
 			</div>
 		</div>
 	</section>
@@ -171,6 +25,8 @@
 
 			var tabs = element.querySelectorAll('.tab');
 			var panels = element.querySelectorAll('.panel');
+			tabs[0].classList.add('active');
+			panels[0].classList.add('active');
 			var oldIndex = 0;
 			function tabHandler () {
 				tabs[i].addEventListener('click', function () {
@@ -184,13 +40,10 @@
 					oldIndex = index;
 				});
 			}
-
 			for (var i = 0; i < tabs.length; i++) {
 				tabs[i].setAttribute('data-index', i);
 				tabHandler();
 			}
-
-
 		}
 	});
 </script>
